@@ -57,22 +57,7 @@ setup(
     platforms=["any"],
     zip_safe=zip_safe,
     python_requires=">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*",
-    setup_requires=["pytest-runner"],
     install_requires=[
         "faker",
     ],
-    tests_require=[
-        "email_validator>=1.0.1,<1.1.0",
-        "ukpostcodeparser>=1.1.1",
-        "mock",
-        "pytest>=3.8.0,<3.9",
-        "more-itertools<6.0.0",
-        "random2==1.0.1",
-        "freezegun==0.3.11",
-    ],
-    extras_require={
-        ':python_version<"3.3"': [
-            'ipaddress',
-        ],
-    },
 )
