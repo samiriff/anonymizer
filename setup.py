@@ -10,10 +10,6 @@ here = os.path.abspath(os.path.dirname(__file__))
 with io.open(os.path.join(here, 'README.md'), encoding='utf-8') as fp:
     README = fp.read()
 
-with io.open(os.path.join(here, 'VERSION')) as version_file:
-    VERSION = version_file.read().strip()
-
-
 # this module can be zip-safe if the zipimporter implements iter_modules or if
 # pkgutil.iter_importer_modules has registered a dispatch for the zipimporter.
 try:
@@ -25,8 +21,8 @@ except (ImportError, AttributeError):
     zip_safe = False
 
 setup(
-    name='data-anonymizer',
-    version=VERSION,
+    name='data-anonymizer-mapper',
+    version='0.1.0',
     description="Anonymizer is a Python package that generates fake data for you, especially useful with pandas dataframes.",
     long_description=README,
     classifiers=[
