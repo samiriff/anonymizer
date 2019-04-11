@@ -32,7 +32,7 @@ setup(
     classifiers=[
         # See https://pypi.org/pypi?%3Aaction=list_classifiers
         'Development Status :: 5 - Production/Stable',
-        'Intended Audience :: Developers,Data Scientists',
+        'Intended Audience :: Developers',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.7',
@@ -52,6 +52,7 @@ setup(
     author='samiriff',
     author_email='samiriff@gmail.com',
     url='https://github.com/samiriff/anonymizer',
+    download_url='https://github.com/samiriff/anonymizer/archive/0.1.0.tar.gz',
     license='MIT License',
     packages=find_packages(exclude=["docs", "tests", "tests.*"]),
     platforms=["any"],
