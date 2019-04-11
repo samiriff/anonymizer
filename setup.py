@@ -25,7 +25,7 @@ except (ImportError, AttributeError):
     zip_safe = False
 
 setup(
-    name='Anonymizer',
+    name='data-anonymizer',
     version=VERSION,
     description="Anonymizer is a Python package that generates fake data for you, especially useful with pandas dataframes.",
     long_description=README,
