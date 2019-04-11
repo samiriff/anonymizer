@@ -1,5 +1,6 @@
 from faker import Faker
-from src.faker_type import FakerType
+from anonymizer.faker_type import FakerType
+
 
 class Anonymizer:
     '''
