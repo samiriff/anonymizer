@@ -58,5 +58,25 @@ address_anonymizer = Anonymizer(faker_type=FakerType.ADDRESS)
 address_anonymizer.get_anonymized_name('74437 Alexandra Well\nSouth Jade, CT 40282')
 # 'USNS Hernandez\nFPO AA 32353'
 ```
+### Anonymize Names in a DateFrame column
+```
+df['Column']
+# 0 None
+# 1 None
+# 2 Marcus Smith
+# 3 Sherry Parsons
+# 4 Marcus Smith
+# Name: Author, dtype: object
+
+anonymizer = Anonymizer(faker_type=FakerType.NAME)
+df['Column'].apply(lambda s : anonymizer.get_anonymized_name(s) if s is not None else None)
+# 0 None
+# 1 None
+# 2 Kelly Walker
+# 3 Yolanda Hawkins
+# 4 Kelly Walker
+# Name: Author, dtype: object
+```
+
 ## Acknowledgements
 - [Faker](https://github.com/joke2k/faker)
